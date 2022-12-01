@@ -14,3 +14,4 @@ Resource            ../properties/data.robot
 ## Page Objects
 Resource            ../pageObjects/Homepage.robot
 Resource            ../pageObjects/LoginPage.robot
+Resource            ../pageObjects/SearchPage.robot
