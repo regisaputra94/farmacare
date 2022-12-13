@@ -16,3 +16,4 @@ Resource            ../pageObjects/Homepage.robot
 Resource            ../pageObjects/LoginPage.robot
 Resource            ../pageObjects/SearchPage.robot
 Resource            ../pageObjects/BasketPage.robot
+Resource            ../pageObjects/DetailPage.robot

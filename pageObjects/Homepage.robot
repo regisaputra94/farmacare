@@ -9,6 +9,8 @@ ${homepage_button_add_to_basket}                    xpath=//div[@class='item-act
 ${homepage_button_continue_shopping}                xpath=//a[.='Continue Shopping']
 ${homepage_modal_button_basket}                     xpath=//div[@class='modal-dialog modal-md']//a[@href='/basket']
 
+${homepage_img_button_item}                         xpath=//div[@class='book-item']/div[@class='item-img']/a/img[{0}]
+
 *** Keywords ***
 User Can Tap Button Sign In/Join In Homepage
     Wait Until Element Is Visible                   ${homepage_button_login}
@@ -46,4 +48,11 @@ User Can Add Some Item In The Basket
             User Can Tap Button Continue Shopping In Modal Item Added To Basket
         END
     END
+
+User Can Tap Item Book In The Homepage
+    [Arguments]         ${index}
+    Wait Until Element Is Visible                   ${homepage_img_button_item.format('${index}')}
+    Click Element                                   ${homepage_img_button_item.format('${index}')}
+
+
 
